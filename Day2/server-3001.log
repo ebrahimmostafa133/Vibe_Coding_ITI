@@ -1,0 +1,47 @@
+Server listening on http://localhost:3001
+OpenAI images API error 400 Invalid value: '256x256'. Supported values are: '1024x1024', '1024x1536', '1536x1024', and 'auto'. {
+  error: {
+    message: "Invalid value: '256x256'. Supported values are: '1024x1024', '1024x1536', '1536x1024', and 'auto'.",
+    type: 'invalid_request_error',
+    param: 'size',
+    code: 'invalid_value'
+  }
+}
+OpenAI API error 403 Project `proj_ULyqptxyj4BjzhJkxdQN0606` does not have access to model `gpt-3.5-turbo` {
+  error: {
+    message: 'Project `proj_ULyqptxyj4BjzhJkxdQN0606` does not have access to model `gpt-3.5-turbo`',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'model_not_found'
+  }
+}
+OpenAI API error 403 Project `proj_ULyqptxyj4BjzhJkxdQN0606` does not have access to model `gpt-3.5-turbo` {
+  error: {
+    message: 'Project `proj_ULyqptxyj4BjzhJkxdQN0606` does not have access to model `gpt-3.5-turbo`',
+    type: 'invalid_request_error',
+    param: null,
+    code: 'model_not_found'
+  }
+}
+PayloadTooLargeError: request entity too large
+    at readStream (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/raw-body/index.js:163:17)
+    at getRawBody (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/raw-body/index.js:116:12)
+    at read (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/body-parser/lib/read.js:79:3)
+    at jsonParser (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/body-parser/lib/types/json.js:138:5)
+    at Layer.handle [as handle_request] (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/express/lib/router/index.js:328:13)
+    at /home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/express/lib/middleware/init.js:40:5)
+PayloadTooLargeError: request entity too large
+    at readStream (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/raw-body/index.js:163:17)
+    at getRawBody (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/raw-body/index.js:116:12)
+    at read (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/body-parser/lib/read.js:79:3)
+    at jsonParser (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/body-parser/lib/types/json.js:138:5)
+    at Layer.handle [as handle_request] (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/express/lib/router/index.js:328:13)
+    at /home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/benzema/Desktop/ITI/Vibe Coding/Day2/node_modules/express/lib/middleware/init.js:40:5)

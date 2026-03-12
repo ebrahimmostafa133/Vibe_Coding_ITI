@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vibe Chat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 48 48" width="36" height="36" aria-hidden="true">
+          <defs>
+            <linearGradient id="g1" x1="0" x2="1">
+              <stop offset="0" stop-color="#06b6d4" />
+              <stop offset="1" stop-color="#7c3aed" />
+            </linearGradient>
+          </defs>
+          <rect rx="10" width="48" height="48" fill="url(#g1)" />
+          <text x="24" y="30" fill="#fff" text-anchor="middle" font-size="24" font-family="Poppins, sans-serif">V</text>
+        </svg>
+        <div class="brand-text">
+          <h1>Vibe Chat</h1>
+          <small class="muted">AI chat with your key</small>
+        </div>
+      </div>
+
+      <div class="models">
+        <label class="muted">Model</label>
+        <select id="model" class="model-select" aria-label="Choose model">
+          <option>Loading models...</option>
+        </select>
+
+        <div id="modelList" class="model-list" aria-hidden="false">
+          <!-- populated by JS -->
+        </div>
+
+        <button id="clearBtn" class="clear-btn" type="button">+ New Chat</button>
+      </div>
+
+      <footer class="sidebar-foot muted">Your API key powers requests — keep it private.</footer>
+    </aside>
+
+    <main class="main">
+      <header class="main-header wa-header">
+        <div class="wa-left">
+          <img class="wa-avatar" src="https://cdn.jsdelivr.net/gh/edent/SuperTinyIcons/images/svg/whatsapp.svg" alt="Vibe Chat" width="40" height="40">
+          <div class="wa-meta">
+            <div id="contactName" class="contact-name">Vibe Chat</div>
+            <div id="contactStatus" class="contact-status muted">online</div>
+          </div>
+        </div>
+        <div class="wa-right">
+          <button id="searchBtn" class="icon-btn" title="Search">🔍</button>
+          <button id="settingsBtn" class="icon-btn" title="Menu">⋮</button>
+        </div>
+      </header>
+
+      <section id="chat" class="chat" aria-live="polite"></section>
+
+      <form id="form" class="composer" autocomplete="off">
+        <button id="attachBtn" type="button" class="icon-btn" title="Attach">📎</button>
+        <textarea id="input" rows="1" placeholder="Ask anything — Shift+Enter for newline"></textarea>
+        <button id="sendBtn" type="submit" class="primary">Send</button>
+      </form>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

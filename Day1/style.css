@@ -1,0 +1,96 @@
+/* --- Basic Reset --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+/* --- Container Layout --- */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* --- Controls Layout --- */
+.controls-container {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.control-group {
+    margin-bottom: 15px;
+}
+
+.buttons-container {
+    margin-top: 20px;
+}
+
+/* --- Elements --- */
+button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+button:disabled {
+    background-color: #555555;
+    cursor: not-allowed;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input[type="range"] {
+    margin-right: 10px;
+}
+
+/* --- Visualization Container --- */
+.visualization-container {
+    height: 60vh;
+    border: 1px solid #444;
+    background-color: #222;
+    display: flex;
+    align-items: flex-end; /* Align bars to the bottom */
+    justify-content: center;
+    padding: 10px;
+}
+
+/* --- Array Bars --- */
+.bar {
+    background-color: #06b6d4;
+    margin: 0 1px; /* Small space between bars */
+    width: 20px; /* Default width, can be adjusted dynamically in JS if needed */
+}
+
+/* --- State Classes (added/removed by JS, styles strictly defined here) --- */
+.bar.comparing {
+    background-color: #eab308; /* Yellow for comparing */
+}
+
+.bar.swapping {
+    background-color: #ef4444; /* Red for swapping */
+}
+
+.bar.sorted {
+    background-color: #22c55e; /* Green for sorted */
+}
